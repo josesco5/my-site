@@ -1,0 +1,483 @@
+body{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 300;
+	color: #191919;
+	background-color:#F5f5f5;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif, arial,helvetica;
+	color:#aeea00;
+	font-size: 3rem;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif,arial,helvetica;
+	font-size: 1.5rem;
+}
+
+p{
+	word-wrap: break-word;
+	font-size:1.2rem;
+}
+
+
+a{
+	color: #fff;
+	font-size: 1.5em;
+	font-style: none;
+}
+
+a:hover{
+	color:#aeea00;
+}
+
+.titulo{
+	text-align: center;
+	color:#1a237e ;
+}
+
+
+
+/* Section Header  */
+.parallax{
+	width: 100%;
+    margin: 0px;
+    position:relative;  
+    padding:7% 0 5% 0; 
+    background: url(../img/img-header.png) no-repeat top center;
+    background-size: cover;
+    color:#fff;
+}
+
+
+
+.description{	
+	position:inherit;
+	padding-top:5%;
+	text-align: right;
+	font-weight: 500;
+	color:#fff;	
+ 	text-shadow: 2px 3px 5px #808080;
+}
+
+/* Navegación del sitio  */
+nav{	
+	position: fixed !important;
+	z-index: 1000;
+    top: 0;
+    width: 100%;
+	background-color:#1a237e;
+	color:#fff;
+	font-weight: 500;
+	clear: left;
+}
+
+
+.table-of-contents a {
+    font-weight: 500;
+    color:#c5cae9;
+    height: 100%;
+   	text-transform: uppercase;
+}
+
+.table-of-contents a:hover {
+    font-weight: 500;
+    border-bottom:none;
+    border-left:none;
+    color:#fff;
+}	
+
+.table-of-contents a.active {
+    font-weight: 500;
+    border-bottom: 4px solid #aeea00;
+    border-left:none;
+    color:#fff;
+}	
+
+/* Section habilidades  */
+.section-titulo{
+	padding:3% 0;
+}
+
+.titulo{
+	background-color: #fff;
+	width:100%;
+	padding:5% 0; 
+
+}
+.titulo .fa:hover{
+	 -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px #191919; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color:rgba(26,35,126,0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    top: -5px;
+    left: 105%;
+}
+
+/* Section Sobre mi  */
+.acerca-mi{
+	width: 100%;
+    margin: 0px;
+    position:relative;  
+    padding:7% 0 5% 0; 
+    background: url(../img/img-background-me.png) no-repeat top center;
+    background-size: cover;
+    color:#fff;
+}
+
+input[type="range"] {
+    border:none;
+}
+
+/* Section portafolio  */
+.section-portafolio{
+	padding:7% 0 5% 0; 
+}
+
+.card small a:hover{
+	background-color:#1a237e;
+}
+.card .card-action {
+	background-color: transparent;	
+}
+
+.card-action{
+	font-size:0.8em;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.card-action :hover{
+	color:#64dd17 !important;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+	color:#1a237e;
+	background-color: transparent;
+}
+
+.card .card-image .card-title {
+    text-shadow: 2px 3px 5px #808080;
+    font-weight: 400;
+}
+
+.date{
+	color:#283593;
+	padding-right: 1%;
+}
+
+.card .card-image {
+    overflow: hidden;
+}
+
+.card-image img{ 
+	width: calc(100% + 40px) !important;
+	 -webkit-transition: opacity 0.35s, 
+	 -webkit-transform 0.35s; 
+	 transition: opacity 0.35s, 
+	 transform 0.35s; 
+	 -moz-transition: 
+	 opacity 0.8s, 
+	 -moz-transform 0.35s; 
+	 -o-transition:
+	  opacity 0.8s, 
+	  -o-transform 0.35s; 
+	  -webkit-transform: 
+	  translate3d(-40px, 0, 0); 
+	  transform: translate3d(-40px, 0, 0); 
+	  -ms-transform: translate3d(-40px, 0, 0); 
+	}
+
+.card-image:hover img { 
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	 transform: translate3d(0, 0, 0);
+	  -ms-transform: translate3d(-40px, 0, 0);
+}
+
+.materialboxed:hover:not(.active) {
+   opacity: 0.6;    
+}
+
+#materialbox-overlay {
+    background-color:rgba(33,33,33,0.9);
+    z-index: 1000;
+    will-change: opacity;  
+
+}
+
+
+/* Section suscripcion  */
+.section-cv{
+    height:100vh;
+    position:relative;  
+    background: url(../img/img-background-footer.png) no-repeat top center;
+    background-size: cover;
+    padding-top:10%; 
+    color:#fff;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.btn, .btn-large{
+	background-color: #aeea00;
+	color:#191919;
+	font-weight: 400;
+	overflow: hidden;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #64dd17;
+    color:#fff;
+}
+
+.btn, .btn-large a{
+	background-color: #aeea00;
+	color:#191919 !important;
+	font-weight: 400;
+}
+
+
+
+/* Footer */
+footer.page-footer {
+	background-color:#1a237e;
+	color:#fff;  
+}
+
+footer.page-footer .footer-copyright {
+   padding-bottom:80px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+/* Contacto */
+.contact{
+	width:350px;	
+	position: fixed;
+	z-index: 1000;
+	background-color:#FFF;
+    bottom: 0;
+    right:0;
+    margin-right: 5%;
+    font-weight: 500;    
+}
+
+.collapsible-header:hover{
+	background-color:#64dd17;
+	color:#191919;
+}
+
+.collapsible-header {
+    background-color: #1a237e;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.collapsible-body{
+	padding-top: 7%;
+	background-color: :#1a237e;
+}
+
+.input-field label {
+    color: #191919;
+    font-weight: 300;
+}
+.input-field .prefix {
+	color: #1a237e;
+	font-size: 1.6rem;
+}
+
+.imput-field .prefix .active{
+	color:#191919 !important ;
+	background-color: #1a237e;
+}
+
+.select-wrapper input.select-dropdown {
+    border-bottom: 1px solid #fff;
+    font-weight: 300;
+}
+
+.caret{
+	color:#191919 !important;
+	font-size: 14px;
+}
+.select-wrapper span.caret {
+    color:#1a237e !important;
+}
+
+.collapsible {
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+
+input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+    border-bottom: 1px solid #1a237e;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #191919;
+}
+
+/* media queries*/
+
+/* media queries para pc de escritorio para mayor a 23 pulgadas*/
+@media (min-width: 1920px) {
+	header{
+		padding-bottom: 6%
+	}
+
+	p{
+		font-size: 1.2em;
+	}
+
+	footer{
+		padding-top: 10%;
+	}
+
+	.portafolio-express{	
+	width: 800px;
+	position:inherit;
+	padding-top: 150px;
+	margin-left: 40%;
+	}
+}
+
+/* media queries para tablet horizontal*/
+@media (max-width:1368px) {
+  header{
+		padding-bottom: 3%;
+	}
+	section{
+		padding-top: 4%;
+		padding-bottom: 2%;
+	}
+
+	.parallax-container{
+		height:35vh;
+	}
+	
+	.portafolio-express{	
+	width: 80%;
+	position:inherit;
+	padding-top:5%;
+	margin-left: 8%;
+	}
+
+	.portafolio-express h1{	
+	font-size: 3em;
+	}
+
+	.section-cv{
+		padding-top: 7%;
+	}
+}
+
+
+/* media queries para tablet vertical*/
+@media (max-width: 768px) {
+  header{
+		padding-bottom: 5%;
+	}
+	section{
+		padding-top: 7%;
+		padding-bottom: 5%;
+	}
+
+	.parallax-container{
+		height: 350px;
+	}
+
+	.portafolio-express{	
+	width: 80%;
+	position:inherit;
+	padding-top:10%;
+	margin-left: 8%;
+	}
+
+	.portafolio-express h1{	
+	font-size: 3em;
+	}
+
+	.section-cv{
+		padding-top: 15%;
+	}
+}
+
+/* media queries para mobile*/
+@media (max-width: 360px) {
+  header{
+		padding-bottom: 5%;
+	}
+	section{
+		padding-top: 7%;
+		padding-bottom: 5%;
+	}
+
+	.parallax-container{
+		height: 100vh;
+	}
+
+	.portafolio-express{	
+	width: 80%;
+	position:inherit;
+	padding-top:30%;
+	margin-left: 8%;
+	}
+
+	.portafolio-express h1{	
+	font-size: 3em;
+	}
+
+	.sobre-mi{
+		height: 100%;
+		padding-top: 0;
+		margin: 0;
+	}
+
+}
+
